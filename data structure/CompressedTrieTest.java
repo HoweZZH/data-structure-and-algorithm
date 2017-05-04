@@ -32,7 +32,7 @@ class Trie {
                     Node existingChild = trav.children[index];
                     Node newChild = new Node(true);
                     StringBuilder remainingLabel = strCopy(label, j);
-
+                    
                     label.setLength(j);     // making "faceboook" as "face"
                     trav.children[index] = newChild;    // new node for "face"
                     newChild.children[remainingLabel.charAt(0) - CASE] = existingChild;
@@ -67,7 +67,9 @@ class Trie {
     // string starting from the given index
     private StringBuilder strCopy(CharSequence str, int index) {
         StringBuilder result = new StringBuilder(100);
-
+        if (index >= str.length()) {
+        	throw new IllegalArgumentException("index out of boundary when copy string to sb");
+        }
         while (index != str.length()) {
             result.append(str.charAt(index++));
         }
@@ -112,8 +114,8 @@ class Trie {
                 ++i;
                 ++j;
             }
-
-            if (j == label.length() && i <= word.length()) {
+            
+            if (j == label.length()) {
                 trav = trav.children[index];    // traverse further
             } else {
                 // edge label is larger than target word
