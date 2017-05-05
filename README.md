@@ -14,7 +14,7 @@ Method overloading is __static polymorphism__(calls to overloaded methods are re
 
 When overriding a method, you might want to use the __@Override__ annotation that instructs the compiler that you intend to override a method in the superclass. If, for some reason, the __compiler__ detects that the method does not exist in one of the superclasses, then it will generate an error. For more information on @Override, see [Annotations](https://docs.oracle.com/javase/tutorial/java/annotations/index.html).
 
-#### Method Overriding__
+#### Method Overriding
 
 Method Overriding means defining a new version of the 
 method by a subclass of the original.
