@@ -30,6 +30,6 @@ grant privileges to user
 ```
 GRANT ALL PRIVILEGES ON DATABASE db_name TO user_name;
 ```
-#####reference:
+##### reference:
 [1]https://www.postgresql.org/docs/9.4/static/app-psql.html
 [2]https://www.postgresql.org/docs/9.2/static/sql-alterrole.html
