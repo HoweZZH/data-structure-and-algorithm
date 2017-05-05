@@ -54,7 +54,7 @@ public class TopLevelDemo {
     }
 }
 ```
->Although Swing's model architecture is sometimes referred to as a Model-View-Controller (MVC) design, it really **isn't. **Swing components are generally implemented so that the **view and controller are indivisible**, implemented by a single UI object provided by the look and feel. The Swing model architecture is more accurately described as a **separable model architecture**. If you're interested in learning more about the Swing model architecture, see [A Swing Architecture Overview](http://www.oracle.com/technetwork/java/architecture-142923.html), an article in *The Swing Connection*.
+>Although Swing's model architecture is sometimes referred to as a Model-View-Controller (MVC) design, it really **isn't.** Swing components are generally implemented so that the **view and controller are indivisible**, implemented by a single UI object provided by the look and feel. The Swing model architecture is more accurately described as a **separable model architecture**. If you're interested in learning more about the Swing model architecture, see [A Swing Architecture Overview](http://www.oracle.com/technetwork/java/architecture-142923.html), an article in *The Swing Connection*.
 see my github project [seam carver](https://github.com/HoweZZH/SeamCarving).
 
 **References:**
