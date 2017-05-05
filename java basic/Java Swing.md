@@ -3,7 +3,7 @@
 2 Create a new thread to process image
 
 3 After image processed use invokeLater() again to enqueue the UI update operations to EDT
-```
+```java
 package components;
 
 import java.awt.*;
