@@ -1,4 +1,4 @@
-#####Install PostgreSQL
+##### Install PostgreSQL
 Mac OS X,  I used the [Graphical Installer](http://www.postgresql.org/download/macosx/), recommended on the download page of PostgreSQL. It includes PostgreSQL, pgAdmin and the StackBuilder utility, for installation of additional packages.
  try to run
 ```
@@ -13,7 +13,7 @@ This should be something like `/Library/PostgreSQL/9.3/bin`. You need to add it 
 export PATH=/Library/PostgreSQL/9.3/bin:$PATH
 ```
 Restart your terminal and try again to type pg_config. 😉
-#####Create a PostgreSQL Database
+##### Create a PostgreSQL Database
 On mac, the command
 ```
 $ which psql
@@ -68,7 +68,7 @@ GRANT ALL PRIVILEGES ON DATABASE dbname_db TO myusername;
 ALTER USER myusername CREATEDB;
 ```
 Where you should change `myusername` to the user’s name you want, and `mypassword` to whatever you want. And don’t forget the ; at the end of each statement! 
-#####Install the PostgreSQL Django adapter, psycopg2
+##### Install the PostgreSQL Django adapter, psycopg2
 we need to install a PostgreSQL database adapter for Python: the [psycopg2](https://pypi.python.org/pypi/psycopg2) package:
 ```
 $ pip install psycopg2
