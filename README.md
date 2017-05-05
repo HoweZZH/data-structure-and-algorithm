@@ -22,4 +22,3 @@ method by a subclass of the original.
 Overriding is __runtime polymorphism__ (Calls to overridden methods are realized at __run-time__, based on the type on which the method is invoked).
 
 
-link to [original post](http://stackoverflow.com/questions/2469767/java-overloading-and-overriding) with more details.
