@@ -1,0 +1,21 @@
+{"type": "NEW", "symbol": "IMIMP", "order_id": 1, "side": "SELL", "quantity": 800, "time": "2017-03-15T10:15:10.975187"}
+{"type": "ORDER_REJECT", "order_id": 1, "reason": "SYMBOL_UNKNOWN", "time": "2017-03-15T10:15:10.975332"}
+{"type": "NEW", "symbol": "SPY", "order_id": 2, "side": "BUY", "quantity": 2000, "time": "2017-03-15T10:15:10.975492"}
+{"type": "ORDER_ACK", "order_id": 2, "time": "2017-03-15T10:15:10.975606"}
+{"type": "FILL", "order_id": 2, "filled_quantity": 2000, "remaining_quantity": 0, "time": "2017-03-15T10:15:10.975717"}
+{"type": "NEW", "symbol": "SPY", "order_id": 3, "side": "SELL", "quantity": 700, "time": "2017-03-15T10:15:10.975860"}
+{"type": "ORDER_ACK", "order_id": 3, "time": "2017-03-15T10:15:10.975966"}
+{"type": "NEW", "symbol": "SPY", "order_id": 4, "side": "SELL", "quantity": 1500, "time": "2017-03-15T10:15:10.976067"}
+{"type": "ORDER_ACK", "order_id": 4, "time": "2017-03-15T10:15:10.976170"}
+{"type": "CANCEL", "order_id": 3, "time": "2017-03-15T10:15:10.976431"}
+{"type": "NEW", "symbol": "SPY", "order_id": 5, "side": "SELL", "quantity": 900, "time": "2017-03-15T10:15:10.976536"}
+{"type": "CANCEL_ACK", "order_id": 3, "time": "2017-03-15T10:15:10.976653"}
+{"type": "NEW", "symbol": "SPY", "order_id": 6, "side": "SELL", "quantity": 800, "time": "2017-03-15T10:15:10.976778"}
+{"type": "NEW", "symbol": "SPY", "order_id": 7, "side": "BUY", "quantity": 1700, "time": "2017-03-15T10:15:10.976893"}
+{"type": "ORDER_ACK", "order_id": 5, "time": "2017-03-15T10:15:10.977002"}
+{"type": "NEW", "symbol": "SPY", "order_id": 8, "side": "SELL", "quantity": 1300, "time": "2017-03-15T10:15:10.977103"}
+{"type": "ORDER_ACK", "order_id": 6, "time": "2017-03-15T10:15:10.977206"}
+{"type": "CANCEL", "order_id": 7, "time": "2017-03-15T10:15:10.977295"}
+{"type": "ORDER_REJECT", "order_id": 7, "reason": "FIRM_RISK_LIMIT_EXCEEDED", "time": "2017-03-15T10:15:10.977395"}
+{"type": "CANCEL", "order_id": 6, "time": "2017-03-15T10:15:10.977515"}
+{"type": "ORDER_REJECT", "order_id": 8, "reason": "FIRM_RISK_LIMIT_EXCEEDED", "time": "2017-03-15T10:15:10.977665"}
