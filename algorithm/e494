@@ -1,0 +1,30 @@
+```
+class Solution(object):
+    
+    def findTargetSumWays(self, nums, S):
+        """
+        :type nums: List[int]
+        :type S: int
+        :rtype: int
+        """
+        self.map = {}
+        if not nums:
+            return 0
+        return self.dfsHelper(nums, 0, 0, S)
+
+    def dfsHelper(self, nums, index, sum, S):
+        encodeString = str(index)+ "->" + str(sum)
+        if encodeString in self.map:
+            return self.map[encodeString]
+
+        if index == len(nums):
+            if sum == S:
+                return 1
+            else:
+                return 0
+        curNum = nums[index]
+        add = self.dfsHelper(nums, index + 1, sum - curNum, S)
+        minus = self.dfsHelper(nums, index + 1, sum + curNum, S)
+        self.map[encodeString] = add + minus
+        return add + minus
+ ```
