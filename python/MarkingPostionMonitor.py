@@ -1,4 +1,6 @@
 import json
+import copy
+from collections import defaultdict
 
 # Implement the class below, keeping the constructor's signature unchanged; it should take no arguments.
 class Company:
@@ -112,10 +114,7 @@ class MarkingPositionMonitor:
                 if "filled_quantity" not in order_detail:
                     order_detail["filled_quantity"] = 0
                 if order_detail["side"] == "SELL":
-                    self.company_dict[company_name].sell += order_detail["filled_quantity"] # set selled quantity to be 0
                     order_detail["filled_quantity"] = m_dict["filled_quantity"]
-                    self.company_dict[company_name].sell -= order_detail["filled_quantity"] # set selled quantity to current number
-
                 if order_detail["side"] == "BUY":
                     self.company_dict[company_name].own -= order_detail["filled_quantity"] #  minus bought quantity from this order
                     order_detail["filled_quantity"] = m_dict["filled_quantity"]
@@ -231,5 +230,22 @@ if __name__ == '__main__':
     str = json.dumps({"type": "FILL", "order_id": 9, "filled_quantity": 1000, "remaining_quantity": 0,
                       "time": "2017-03-15T11:15:10.975717"})
     assertEqual(M.on_event(str), -200)  # 25
+
+    print("###### test 2 ########")
+    M2 = MarkingPositionMonitor()
+    with open("input2.txt", "r") as f1, open("output2.txt", "r") as f2:
+        input = f1.readlines()
+        f1.close()
+        output = f2.readlines()
+        f2.close()
+
+        input_lines = [x.strip() for x in input]
+        output_lines = [int(x.strip()) for x in output]
+
+        for i in range(len(input_lines)):
+            assertEqual(M2.on_event(input_lines[i]), output_lines[i])
+
+
+
 
 
