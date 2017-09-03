@@ -233,7 +233,11 @@ if __name__ == '__main__':
 
     print("###### test 2 ########")
     M2 = MarkingPositionMonitor()
+<<<<<<< HEAD
     with open("input002.txt", "r") as f1, open("output002.txt", "r") as f2:
+=======
+    with open("input2.txt", "r") as f1, open("output2.txt", "r") as f2:
+>>>>>>> origin/master
         input = f1.readlines()
         f1.close()
         output = f2.readlines()
@@ -245,4 +249,10 @@ if __name__ == '__main__':
         for i in range(len(input_lines)):
             assertEqual(M2.on_event(input_lines[i]), output_lines[i])
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> origin/master
 
